@@ -1,0 +1,44 @@
+﻿SiteID,Name,Company,Operating Status,CountAsNewProject,Project Announcement Date,Commercial Production Started,Target Year,Sector,Mfg Activity,Mfg Product,Announced Post-IRA,Latitude,Longitude,City,State / Province,Country,"Capital Investment 
+($ million)",Targeted annual production,Realized annual production,Production units,Target jobs,Current jobs,Congressional District,Current Representative Party
+13,Project ATLiS,EnergySource Minerals,Planned,1,10/14/19,,2025,Batteries,Extraction,Lithium,0,33.20416667,-115.5744444,Imperial County,CA,USA,660,"19,000",?,tpa,70,?,CA25,Democrat
+36,Statevolt Gigafactory,Statevolt,Paused,1,4/19/22,,2025,Batteries,Manufacturing,Battery Cell,0,33.29506703,-115.9523495,Salton Sea,CA,USA,4000,54,?,GWh,"2,500",?,CA25,Democrat
+105,Imperial Valley,BHE Renewables,Pilot,1,2/22/22,,2026,Batteries,Extraction,Lithium,0,33.16416667,-115.6141667,Imperial County,CA,USA,?,"90,000",?,tpa,?,?,CA25,Democrat
+133,Tesla Megafactory,Tesla,Operating,1,9/1/21,11/1/22,2022,Batteries,Manufacturing,Storage Battery,0,37.79967889,-121.2987807,Lathrop,CA,USA,?,40,25,GWh,"2,000","1,000",CA13,Democrat
+146,Boron Plant,Rio Tinto,Pilot,1,4/7/21,,?,Batteries,Extraction,Lithium,0,35.03555556,-117.6986111,Boron,CA,USA,50,"5,000",?,tpa,?,?,CA23,Republican
+153,QuantumScape QS-0 Facility,QuantumScape,Pilot,1,2/16/21,,2025,Batteries,Manufacturing,Battery Cell,0,37.3919296,-121.8836551,San Jose,CA,USA,260,?,?,GWh,?,?,CA17,Democrat
+166,Tesla Kato Road Facility,Tesla,Pilot,1,6/1/20,9/22/20,2021,Batteries,Manufacturing,Battery Cell,0,37.4692662,-121.9276199,Fremont,CA,USA,?,10,5,GWh,?,?,CA17,Democrat
+169,Hell’s Kitchen Project,Controlled Thermal Resources,Pilot,1,3/16/20,,2025,Batteries,Extraction,Lithium,0,33.1775,-115.6030556,Imperial County,CA,USA,?,"25,000",?,tpa,1400,?,CA25,Democrat
+188,Romeo Power Cypress Facility,Nikola,Closed,1,8/24/17,11/15/17,2022,Batteries,Manufacturing,Battery Pack,0,33.99888889,-118.1838889,Vernon,CA,USA,?,?,?,GWh,?,270,CA42,Democrat
+191,ieFactory,Faraday Future Intelligent Electric,Operating,1,1/3/17,3/29/23,2023,EVs,Manufacturing,EVs,0,36.26940061,-119.6444459,Hanford,CA,USA,?,,?,EVs,350,?,CA22,Republican
+195,Bristol Lake,Standard Lithium,Pilot,1,8/1/16,,,Batteries,Extraction,Lithium,0,34.472595,-115.7413473,Bristol Lake,CA,USA,,,,tpa,,,CA23,Republican
+201,BYD Bus Factory,BYD,Operating,1,5/1/13,4/1/14,2014,EVs,Manufacturing,EVs,0,34.7223801,-118.1482723,Lancaster,CA,USA,50,"1,500","1,500",EVs,750,750,CA27,Democrat
+205,Tesla Fremont Factory,Tesla,Operating,1,6/30/10,,2012,EVs,Manufacturing,EVs,0,37.4925,-121.9441667,Fremont,CA,USA,"5,000.00","650,000","650,000",EVs,18000,"18,000",CA17,Democrat
+217,Proterra Bus Manufacturing Facility,Proterra,Operating,1,2015,2017,2017,EVs,Manufacturing,EVs,0,34.0150212,-117.8474984,City of Industry,CA,USA,20,400,208,EVs,100,,CA38,Democrat
+318,Pier Wind,Port of Long Beach,Planned,1,,,2035,Wind,Manufacturing,Turbine Assembly,1,33.7542019,-118.2267577,Long Beach,CA,USA,4700,8,,GW,,,CA42,Democrat
+328,General Electric Wind Manufacturing Tehachapi Facility,General Electric,Closed,1,4/12/02,,?,Wind,Manufacturing,Wind Infrastructure,0,35.1115037,-118.3710291,Tehachapi,CA,USA,,,,,,,CA20,Republican
+356,Kyocera Solar Panel Factory,Kyocera,Closed,1,3/3/10,6/2/10,2010,Solar,Manufacturing,Solar Modules,0,32.820849,-117.1420081,San Diego,CA,USA,,0.3,,GW,,,CA51,Democrat
+364,C-Si Cali Facility,Auxin Solar,Operating,1,N.D.,2008,N.D.,Solar,Manufacturing,Solar Modules,0,37.23193087,-121.778715,San Jose,CA,USA,,0.15,,GWh,,,CA19,Democrat
+386,Fremont Solaria Facility,Solaria,Operating,1,6/11/10,,,Solar,Manufacturing,Solar Modules,0,37.3269243,-120.424565,Fremont,CA,USA,65,0.025,,GWh,100,,CA13,Democrat
+389,Riverside CA Facility,Sunspark,Operating,1,10/2/15,n.d.,n.d.,Solar,Manufacturing,Silicon,0,33.97368015,-117.3697573,Riverside,CA,USA,,0.25,0.25,GW,120,,CA39,Democrat
+399,GAF California Facility,GAF Energy,Operating,1,5/11/21,2022,2021,Solar,Manufacturing,Solar Shingles,0,37.25295887,-121.7837732,San Jose,CA,USA,50,0.06,0.06,GWh,,,CA19,Democrat
+406A,SPI Energy S4A Module Manufacturing Facility (Expansion),SPI Energy,Under Construction,1,2/21/22,1/9/23,2023,Solar,Manufacturing,Solar Modules,1,38.6547425,-121.4161796,Sacramento,CA,USA,,1.2,0.7,GW,400,150,CA6,Democrat
+406B,SPI Energy S4A Module Manufacturing Facility,SPI Energy,Operating Partially; Under Construction,1,12/7/21,1/9/23,2022,Solar,Manufacturing,Solar Modules,0,38.6555026,-121.4173822,Sacramento,CA,USA,,0.7,0.7,GW,,,CA6,Democrat
+466,Sparkz Rancho Cordova Battery Factory,Sparkz,Rumored,1,11/21/23,,,Batteries,Manufacturing,Battery Pack,1,38.6277675,-121.2078601,Rancho Cordova,CA,USA,"1,000.00",,,,925,,CA3,Republican
+477,Nanotech Energy Chico 2 Battery Factory (Expansion),Nanotech Energy,Under Construction,1,11/10/22,,2024,Batteries,Manufacturing,Battery Pack,1,39.70699495,-121.8172207,Chico,CA,USA,,0.1,,GWh,130,,CA1,Republican
+482,Gotion Assembly Facility,Gotion,Operating,1,2014,12/21/23,2023,Batteries,Manufacturing,Storage Battery,0,37.463517,-121.9273427,Fremont,CA,USA,,1,,GWh,,,CA17,Democrat
+485,Sparkz Livermore Battery Factory,Sparkz,Pilot,1,1/25/22,,,Batteries,Manufacturing,Battery Pack,0,37.6962523,-121.726171,Livermore,CA,USA,700,,,,800,0,CA14,Democrat
+502,LiCAP Technologies California Battery Factory (Expansion?),LiCAP Technologies,Planned,0,5/18/23,,,Batteries,Manufacturing,Battery Cell Components,1,38.57914742,-121.3317503,Rancho Cordova,CA,USA,,0.25,,GWh,,,CA6,Democrat
+503,Cenntro Group Ontario Assembly Plant,Cenntro Group,Rumored,1,7/11/23,,,EVs,Manufacturing,EVs,1,34.06868135,-117.5305269,Ontario,CA,USA,,,,,,,CA35,Democrat
+507,Mullen Monrovia California Battery Factory,Mullen,Closed,1,9/24/20,,2022,Batteries,Manufacturing,Battery Pack,0,34.14177159,-117.998821,Monrovia,CA,USA,,,,,,,CA31,Democrat
+508,Mullen Fullerton California Battery Factory,Mullen,Planned,1,11/13/23,,2025,Batteries,Manufacturing,Battery Pack,1,33.86759157,-117.901258,Fullerton,CA,USA,,1,,GWh,,,CA46,Democrat
+532,Xos Los Angeles Facility,Xos,Operating,1,20-Mar,21-May,,EVs,Manufacturing,EVs,0,34.1193765,-118.2550545,Los Angeles,CA,USA,,,,,,,CA30,Democrat
+533,CyboEnergy Rancho Cordova Factory,CyboEnergy,Operating,1,11-Jun,13-Jul,2013,Solar,Manufacturing,Inverters,0,38.59278871,-121.2824219,Rancho Cordova,CA,USA,,,,,,,CA6,Democrat
+534,EPC Power California Factory,EPC Power,Operating,1,2010,2010,2010,Solar,Manufacturing,Inverters,0,32.93776849,-117.0424477,Poway,CA,USA,,,,,,,CA48,Republican
+566,Staubl California Facility Expansion,Staubli,Operating,1,5/1/24,2011,,Solar,Manufacturing,Solar Components,1,38.5487385,-122.8157223,Windsor,CA,USA,,,,,,,CA2,Democrat
+152A,Proterra Battery Manufacturing Facility,Proterra,Sold,1,12/10/20,2020,2020,Batteries,Manufacturing,Battery Cell,0,34.0150212,-117.8474984,City of Industry,CA,USA,,,1,GWh,,,CA38,Democrat
+152B,Proterra Battery Manufacturing Facility,Volvo,Operating,0,12/10/20,2020,2020,Batteries,Manufacturing,Battery Cell,0,34.0150212,-117.8474984,City of Industry,CA,USA,105,,1,GWh,,,CA38,Democrat
+592,Caelux California Facility,Caelux Corporation,Operating,1,n.d.,8/14/23,2023,Solar,Manufacturing,Solar Modules,1,34.1056375,-117.9708917,Baldwin Park,CA,USA,24,0.1,,GW,,,CA31,Democrat
+673,Sepion West Sacramento Facility,Sepion Technologies,Planned,1,10/3/24,,2027,Batteries,Manufacturing,Battery Cell Components,1,38.5556912,-121.5830406,West Sacramento,CA,USA,,"50,000",,# EVs supported by annual production,,,CA7,Democrat
+690A,Northvolt San Leandro Facility,Northvolt,Sold,0,2/24/21,,,Batteries,Manufacturing,Battery Cell,0,37.71368534,-122.1793728,San Leandro,CA,USA,,,,,,222,CA12,Democrat
+690B,Lyten San Leandro Facility (purchased from Northvolt),Lyten,Planned,1,11/13/24,,2025,Batteries,Manufacturing,Battery Cell,1,37.71368534,-122.1793728,San Leandro,CA,USA,10,0.2,,GWh,,,CA12,Democrat
+705,Motiv Hayward Facility,Motiv Electric Trucks,Operating,1,1/1/15,5/27/15,2015,EVs,Manufacturing,EVs,0,37.6297264,-122.1223017,Hayward,CA,USA,8.1,480,,# EVs supported by annual production,20,,CA14,Democrat

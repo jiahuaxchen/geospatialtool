@@ -1,0 +1,8 @@
+﻿SiteID,Name,Company,Operating Status,CountAsNewProject,Project Announcement Date,Commercial Production Started,Target Year,Sector,Mfg Activity,Mfg Product,Announced Post-IRA,Latitude,Longitude,City,State / Province,Country,"Capital Investment 
+($ million)",Targeted annual production,Realized annual production,Production units,Target jobs,Current jobs,Congressional District,Current Representative Party
+315,Sparrows Point Steel,"U.S. Wind Inc, Haizea Wind Group Management S.L.",Planned,1,8/1/21,,2025,Wind,Manufacturing,Monopile,0,39.2133518,-76.47456485,Sparrows Point,MD,USA,150,?,?,?,530,?,MD7,Democrat
+425,Ørsted Maryland Crystal Steel Factory,Crystal Steel Fabricators,Planned,1,10/15/21,,2026,Wind,Manufacturing,Foundation Components,0,38.68864632,-75.75269278,Federalsburg,MD,USA,3,,,,50,0,MD1,Republican
+538,Blink Charging Maryland Assembly Facility,Blink Charging,Planned,1,3/11/24,,,EVs,Manufacturing,EV Chargers,1,38.9621174,-76.7157531,Bowie,MD,USA,,,,,,,MD5,Democrat
+564,Ion Storage Systems Maryland Facility,Ion Storage Systems,Operating,1,5/7/24,2024,,Batteries,Manufacturing,Battery Pack,1,39.0619903,-76.887444,Beltsville,MD,USA,,0.01,0.001,GWh,,,MD4,Democrat
+620,Volvo Hagerstown Manufacturing Facility (EV Expansion),Volvo,Planned,1,7/11/24,,,EVs,Manufacturing,EVs,1,39.67891744,-77.72705294,Hagerstown,MD,USA,139,,,,98,,MD6,Democrat
+622,Hellenic Baltimore Facility,Hellenic Cables Americas,Planned,1,7/2/24,,2026,Wind,Manufacturing,Wind Infrastructure,1,39.2362065,-76.5813362,Baltimore,MD,USA,300,,,,120,,MD7,Democrat
