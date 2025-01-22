@@ -1,0 +1,35 @@
+---
+title: "EDA"
+format: html
+editor: visual
+---
+
+```{r}
+library(readr)
+library(dplyr)
+CA_greenjob <- read_csv("data/CA_EJ.csv") %>% 
+  mutate(across(where(is.character), as.factor)) %>% 
+  mutate(CJEST = ifelse(SN_C == 1 | SN_C_V10, "disadvantage", "non-disadvantage")) %>% 
+  mutate(Cal40 = ifelse(CIscoreP < 50, "Lower 50th", "Upper 50th"))
+
+MD_greenjob <- read_csv("data/MD_EJ.csv") %>% 
+  mutate(across(where(is.character), as.factor)) %>% 
+  mutate(CJEST = ifelse(SN_C == 1 | SN_C_V10, "disadvantage", "non-disadvantage")) %>% 
+  mutate(MD_EJ = ifelse(FinalEJPercentile < 50, "Lower 50th", "Upper 50th"))
+
+```
+
+```{r}
+# crosstab
+table(CA_greenjob$CJEST,CA_greenjob$Cal40)
+table(MD_greenjob$MD_EJ, MD_greenjob$CJEST)
+
+# green job summary stats by cjest
+library(modelsummary)
+datasummary(Operating_Status + Sector + Mfg_Activity ~ SN_C * N, data = CA_greenjob, output = 'CA_sum.docx')
+datasummary(Operating_Status + Sector + Mfg_Activity ~ SN_C * N, data = MD_greenjob)
+```
+
+```{r}
+
+```
