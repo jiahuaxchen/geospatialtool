@@ -1,4 +1,4 @@
-Name;Operating_Status;Sector;Mfg_Activity
-Statevolt Gigafactory;Paused;Batteries;Manufacturing
-Bristol Lake;Pilot;Batteries;Extraction
-LiCAP Technologies California Battery Factory (Expansion?);Planned;Batteries;Manufacturing
+Name;Operating_Status;Sector;Mfg_Activity;City
+Statevolt Gigafactory;Paused;Batteries;Manufacturing;Salton Sea
+Bristol Lake;Pilot;Batteries;Extraction;Bristol Lake
+LiCAP Technologies California Battery Factory (Expansion?);Planned;Batteries;Manufacturing;Rancho Cordova

@@ -17,6 +17,8 @@ MD_greenjob <- read_csv("data/MD_EJ.csv") %>%
   mutate(CJEST = ifelse(SN_C == 1 | SN_C_V10, "disadvantage", "non-disadvantage")) %>% 
   mutate(MD_EJ = ifelse(FinalEJPercentile < 50, "Lower 50th", "Upper 50th"))
 
+library(sf)
+tracts_3km <- st_read("data/tracts_3km/Tracts_within_3km.shp")
 ```
 
 ```{r}
@@ -26,10 +28,45 @@ table(MD_greenjob$MD_EJ, MD_greenjob$CJEST)
 
 # green job summary stats by cjest
 library(modelsummary)
-datasummary(Operating_Status + Sector + Mfg_Activity ~ SN_C * N, data = CA_greenjob, output = 'CA_sum.docx')
-datasummary(Operating_Status + Sector + Mfg_Activity ~ SN_C * N, data = MD_greenjob)
+datasummary(Operating_Status + Sector + Mfg_Activity ~ CJEST * N, data = CA_greenjob)
+datasummary(Operating_Status + Sector + Mfg_Activity ~ CJEST * N, data = MD_greenjob)
 ```
 
 ```{r}
+# Filter rows and select columns
+CA_greenjob %>%
+  filter(CJEST == "disadvantage" & Cal40 == "Lower 50th") %>%
+  select(Name, Operating_Status, Sector, Mfg_Activity, City) 
 
+library(tidyr)
+# Identify PFS columns exceeding 0.9
+tracts_3km %>%
+  filter(SN == "disadvantage" & Cal40 == "Lower 50th") %>%
+  select(matches("PFS$")) %>%
+  mutate(RowID = row_number()) %>%  # Add row identifier for reference
+  pivot_longer(cols = matches("PFS$"), names_to = "PFS_Column", values_to = "Value") %>%
+  filter(Value >= 0.9) 
+
+```
+
+```{r}
+# Filter rows and select columns
+CA_greenjob %>%
+  filter(CJEST == "disadvantage",Mfg_Activity == "Extraction") %>%
+  select(Name, Operating_Status, Sector, Mfg_Activity, City, CIscoreP, CJEST) %>% 
+  write_csv2("CA_CJEST_5extraction_company.csv")
+
+library(tidyr)
+# Identify PFS columns exceeding 0.9
+tracts_3km %>%
+  st_drop_geometry() %>% 
+  #filter(CJEST == "disadvantage",Mfg_Activity == "Extraction") %>% 
+  select(SF,GEOID10,matches("PFS$")) %>%
+  mutate(RowID = row_number()) %>%  # Add row identifier for reference
+  pivot_longer(cols = matches("PFS$"), names_to = "PFS_Column", values_to = "Value") %>%
+  filter(Value >= 0.9) %>% 
+  write.csv("tracts_3km_burdened.csv")
+
+# View the result
+print(pfs_exceed)
 ```
