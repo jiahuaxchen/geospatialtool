@@ -4,44 +4,19 @@ format: html
 editor: visual
 ---
 
+### CCS
+
 ```{r}
 library(readr)
 library(dplyr)
-CA_greenjob <- read_csv("data/CA_EJ.csv") %>% 
-  mutate(across(where(is.character), as.factor)) %>% 
-  mutate(CJEST = ifelse(SN_C == 1 | SN_C_V10, "disadvantage", "non-disadvantage")) %>% 
-  mutate(Cal40 = ifelse(CIscoreP < 50, "Lower 50th", "Upper 50th"))
-
-MD_greenjob <- read_csv("data/MD_EJ.csv") %>% 
-  mutate(across(where(is.character), as.factor)) %>% 
-  mutate(CJEST = ifelse(SN_C == 1 | SN_C_V10, "disadvantage", "non-disadvantage")) %>% 
-  mutate(MD_EJ = ifelse(FinalEJPercentile < 50, "Lower 50th", "Upper 50th"))
-
 library(sf)
 tracts_3km <- st_read("data/tracts_3km/Tracts_within_3km.shp")
 ```
 
 ```{r}
-# crosstab
-table(CA_greenjob$CJEST,CA_greenjob$Cal40)
-table(MD_greenjob$MD_EJ, MD_greenjob$CJEST)
-
-# green job summary stats by cjest
-library(modelsummary)
-datasummary(Operating_Status + Sector + Mfg_Activity ~ CJEST * N, data = CA_greenjob)
-datasummary(Operating_Status + Sector + Mfg_Activity ~ CJEST * N, data = MD_greenjob)
-```
-
-```{r}
-# Filter rows and select columns
-CA_greenjob %>%
-  filter(CJEST == "disadvantage" & Cal40 == "Lower 50th") %>%
-  select(Name, Operating_Status, Sector, Mfg_Activity, City) 
-
 library(tidyr)
 # Identify PFS columns exceeding 0.9
 tracts_3km %>%
-  filter(SN == "disadvantage" & Cal40 == "Lower 50th") %>%
   select(matches("PFS$")) %>%
   mutate(RowID = row_number()) %>%  # Add row identifier for reference
   pivot_longer(cols = matches("PFS$"), names_to = "PFS_Column", values_to = "Value") %>%
@@ -69,4 +44,37 @@ tracts_3km %>%
 
 # View the result
 print(pfs_exceed)
+```
+
+### Green job (archived)
+
+```{r}
+library(readr)
+library(dplyr)
+CA_greenjob <- read_csv("data/CA_EJ.csv") %>% 
+  mutate(across(where(is.character), as.factor)) %>% 
+  mutate(CJEST = ifelse(SN_C == 1 | SN_C_V10, "disadvantage", "non-disadvantage")) %>% 
+  mutate(Cal40 = ifelse(CIscoreP < 50, "Lower 50th", "Upper 50th"))
+
+MD_greenjob <- read_csv("data/MD_EJ.csv") %>% 
+  mutate(across(where(is.character), as.factor)) %>% 
+  mutate(CJEST = ifelse(SN_C == 1 | SN_C_V10, "disadvantage", "non-disadvantage")) %>% 
+  mutate(MD_EJ = ifelse(FinalEJPercentile < 50, "Lower 50th", "Upper 50th"))
+```
+
+```{r}
+# crosstab
+table(CA_greenjob$CJEST,CA_greenjob$Cal40)
+table(MD_greenjob$MD_EJ, MD_greenjob$CJEST)
+
+# green job summary stats by cjest
+library(modelsummary)
+datasummary(Operating_Status + Sector + Mfg_Activity ~ CJEST * N, data = CA_greenjob)
+datasummary(Operating_Status + Sector + Mfg_Activity ~ CJEST * N, data = MD_greenjob)
+
+# Filter rows and select columns
+CA_greenjob %>%
+  filter(CJEST == "disadvantage" & Cal40 == "Lower 50th") %>%
+  select(Name, Operating_Status, Sector, Mfg_Activity, City) 
+
 ```
